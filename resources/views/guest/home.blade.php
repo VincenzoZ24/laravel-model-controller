@@ -10,7 +10,13 @@
 <body>
     <div class="container_card">
         @foreach ($movies as $movie)
-         <div class="card">{{$movie -> title}}</div>  
+         <div class="card">
+            {{$movie -> title}}
+            <p>Original Title: {{$movie -> original_title}}</p> 
+            <p>date: {{$movie -> date}}</p>
+            <p>ID: {{$movie -> id}}</p>
+        </div> 
+         
         @endforeach
     </div> 
     
